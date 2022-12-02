@@ -1,0 +1,58 @@
+$header-height: 95px;
+$sidebar-width: 232px;
+
+.header {
+  // height: $header-height;
+  background-color: green;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - $header-height);
+}
+
+.sidebar-area {
+  width: $sidebar-width;
+  background-color: pink;
+}
+
+.content-area {
+  width: calc(100% - $sidebar-width);
+  background-color: aliceblue;
+  overflow-y: auto;
+}
+
+.search-form {
+  border: 1px solid #c4c2c2;
+  border-radius: 40px;
+  background: #eeebeb;
+  display: flex;
+  align-items: center;
+  
+  input {
+    border: none;
+    background: inherit;
+    font-size: 12px;
+    outline: none;
+    margin: auto;
+    height: 100%;
+    border-radius: 40px;
+    padding: 10px;
+   }
+   
+  button {
+    margin-right: auto;
+    border: none;
+    background: none;
+   
+  }
+} 
+
+.toggle-device {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
