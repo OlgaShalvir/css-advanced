@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.square {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.square-big {
+  border: 1px solid #000;
+  height: 200px;
+  width: 33.333%;
+  position: relative;
+}
+
+.square-small {
+  width: 50px;
+  height: 50px;
+  background-color: #00aff0;
+  position: absolute;
+}
+
+.top {
+  top: 0;
+}
+
+.middle {
+  top:50%;
+  transform: translateY(-50%);
+  &.sq2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sq2 {
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.sq3 {
+  right: 0;
+}

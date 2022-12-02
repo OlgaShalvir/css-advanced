@@ -1,0 +1,84 @@
+.gradient-box {
+  background-color: gainsboro;
+}
+
+.gradient-box--1 {
+  background: linear-gradient(to left, #e66465 50%, #9198e5 50%);
+}
+
+.gradient-box--2 {
+  background: repeating-radial-gradient(#df7ebf,#d8509f 10px, #087be6 10px,  #b2adee 20px);
+}
+
+.gradient-box--3 {
+  background: radial-gradient(#ffffff, #b7ec86);
+}
+
+.gradient-box--4 {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+}
+
+.gradient-box--5 {
+  background: radial-gradient(circle, #fbfcfc 0%, #4797b1 34%, #d7a6ff 90%)
+}
+
+.gradient-box--6 {
+  background: radial-gradient(circle, #229fc3 0%, #2dfd80fa 100%);
+}
+
+.gradient-box--7 {
+  background: repeating-conic-gradient(from 0deg, #e76db8 0deg 30deg, #299adb 30deg 60deg);
+}
+
+.gradient-box--8 {
+  background: repeating-linear-gradient(135deg,#eba82c,#fafa4f 7%,#51f551 10%);
+}
+
+.gradient-box--9 {
+  background: repeating-linear-gradient(90deg, #f0a5a5ea 10%, #ce4e4eea 25%);
+}
+
+.gradient-box--10 {
+  background: conic-gradient( #ff8a00, #e52e71, #ff8a00);
+}
+
+.gradient-box--11 {  
+  background:
+  conic-gradient(#ff0000,#ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
+
+.gradient-box--12 {  
+  background: linear-gradient(to right, #ff000000, #2600ff);
+}
+
+.gradient-box--13 {  
+  background: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.gradient-box--14 {  
+  background: linear-gradient(to right, #00416a, #e4e5e6);
+}
+
+.gradient-box--15 {  
+  background: repeating-conic-gradient(from 3deg at 25% 25%, #00aaff 0deg 15deg, #33bbff 10deg 30deg);
+}
+
+.gradient-box--16 {  
+ background: repeating-conic-gradient(from 3deg at 25% 25%, #25e625,#21bd74 2deg 5deg, #017201, #c8ff00 15deg 15deg, #02c058 20deg);
+}
+
+.gradient-box--17 { 
+background: linear-gradient(215deg, #71b073 29.9%, #2776aa 80%);
+}
+
+.gradient-box--18 {
+background: repeating-linear-gradient(180deg, #888686,#5a5353 10px, white 15px,  white 20px);
+}
+
+.gradient-box--19 {
+  background: linear-gradient(to bottom, #ee88aa, #cae3fc 80%, #ffffff);
+}
+
+.gradient-box--20 {
+  background: repeating-radial-gradient(#7cdcfa, #5185f5, #7e8ff0 20%);
+}
