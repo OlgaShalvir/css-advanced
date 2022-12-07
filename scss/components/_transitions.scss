@@ -1,0 +1,44 @@
+.transition-area {
+  background-color: #ccc;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 20%;
+  }
+
+  &:hover {
+    .transition-child {
+      left: calc(100% - 50px);
+      top: 30px;
+      background-color: #00f;
+      opacity: 0.3;
+
+    }
+  }
+}
+
+.transition-child {
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:
+    background-color 2s ease-out 0s,
+    opacity 2s ease-out 0s,
+    left 2s linear 2s,
+    top 2s linear 4s;
+  // transition-property: left, top;
+  // transition-duration: 5s;
+  // transition-timing-function: ease-out;
+}
+
+/*
+transition-property: all || margin || transform || left, etc - pe care proprietate CSS vrem sa aplicam tranzitia?
+transition-duration: <timp> in secunde sau milisecunde, cat timp sa dureze tranzitia
+transition-timing-function: linear || ease || ease-in || ease-in-out || ease-out || cubic-bezier()
+transition-delay: <timp> in secunde sau milisecunde, cat timp amânăm tranziția
+*/

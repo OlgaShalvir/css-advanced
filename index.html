@@ -12,7 +12,7 @@
   <header class="header">
     <div class="search-container">
       <form class="search-form">
-        <input type="search" name="search" placeholder="Search the docs…">
+        <input type="search" value="" placeholder="Search the docs…" class="search-input">
         <button>
         <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="6.5" transform="matrix(-1 0 0 1 7.64795 7.5)" stroke="#BCBCBC"/>
@@ -59,8 +59,8 @@
       <li>
         <a href="#">
           <svg width="51" height="39" viewBox="0 0 51 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 2.28406C6 1.73177 6.44772 1.28406 7 1.28406H43C43.5523 1.28406 44 1.73177 44 2.28406V32.1022C44 32.6545 43.5523 33.1022 43 33.1022H7C6.44771 33.1022 6 32.6545 6 32.1022V2.28406Z" stroke="#F5A623" stroke-width="2"/>
-            <path d="M1.22892 34.1752C1.11191 33.5592 1.58426 32.9886 2.21136 32.9886H48.0042C48.6528 32.9886 49.1298 33.5966 48.9755 34.2266L48.4021 36.5675C48.2925 37.0149 47.8915 37.3296 47.4309 37.3296H2.65598C2.17565 37.3296 1.76317 36.988 1.67354 36.5162L1.22892 34.1752Z" stroke="#F5A623" stroke-width="2"/>
+            <path d="M6 2.28406C6 1.73177 6.44772 1.28406 7 1.28406H43C43.5523 1.28406 44 1.73177 44 2.28406V32.1022C44 32.6545 43.5523 33.1022 43 33.1022H7C6.44771 33.1022 6 32.6545 6 32.1022V2.28406Z" stroke="#BCBCBC" stroke-width="2"/>
+            <path d="M1.22892 34.1752C1.11191 33.5592 1.58426 32.9886 2.21136 32.9886H48.0042C48.6528 32.9886 49.1298 33.5966 48.9755 34.2266L48.4021 36.5675C48.2925 37.0149 47.8915 37.3296 47.4309 37.3296H2.65598C2.17565 37.3296 1.76317 36.988 1.67354 36.5162L1.22892 34.1752Z" stroke="#BCBCBC" stroke-width="2"/>
           </svg>
         </a>
       </li>
@@ -78,12 +78,31 @@
   <main class="main">
     <aside class="sidebar-area">
       <ul>
+        <li><a href="#animations">Animations</a></li>
+        <li><a href="#transitions">Transitions</a></li>
+        <li><a href="#transform">Transform</a></li>
         <li><a href="#ratio-box">Ratio Box</a></li>
         <li><a href="#filters">Filters</a></li>
         <li><a href="#gradient">Gradient</a></li>
       </ul>
     </aside>
     <content class="content-area">
+      <div class="section" id="animations">
+        <h2 class="section__title">Animations</h2>
+        <div class="section__content">
+          <div class="animation-area">
+            <div class="animation-child ransition-child--2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="transitions">
+        <h2 class="section__title">Transitions</h2>
+        <div class="section__content">
+          <div class="transition-area">
+            <div class="transition-child transition-child--1"></div>
+          </div>
+        </div>
+      </div>
       <div class="section" id="transform">
         <h2 class="section__title">Transform</h2>
         <div class="section__content">
@@ -91,13 +110,194 @@
             <div class="row">
               <div class="col-4 transform-action-area transform-action-area--1">
                 <div class="transform-element">
-                  Transform Element 1
+                  Transform: scale()
                 </div>
               </div>
               <div class="col-4 transform-action-area transform-action-area--2">
                 <div class="transform-element">
-                  Transform Element 2
+                  Transform rotate()
                 </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--3">
+                <div class="transform-element">
+                  Transform schew()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--4">
+                <div class="transform-element">
+                  Transform translate()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--5">
+                <div class="transform-element">
+                  Transform rotate() + translate()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--6">
+                <div class="transform-element">
+                  Transform rotate3D()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--7">
+                <div class="transform-element">
+                  Transform rotate()+ transform origin top
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--8">
+                <div class="transform-element">
+                  Transform scale()+sckew()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--9">
+                <div class="transform-element">
+                  Transform scale() + rotate()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--10">
+                <div class="transform-element">
+                  Transform rotateY() + translateX()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--11">
+                <div class="transform-element">
+                  Transform rotateX() + translateZ()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--12">
+                <div class="transform-element">
+                  Transform translate3d()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--13">
+                <div class="transform-element">
+                  Transform perspective() + rotate()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--14">
+                <div class="transform-element">
+                  Transform perspective() + rotate()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--15">
+                <div class="transform-element">
+                  Transform translate() + rotateX() + rotateZ()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--16">
+                <div class="transform-element">
+                  Transform perspective() + rotateX() + scale()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--17">
+                <div class="transform-element">
+                  Transform scale() + rotateX() + rotateY() + translateZ()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--18">
+                <div class="transform-element">
+                  Transform rotate() + Transform-origin()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--19">
+                <div class="transform-element">
+                  Transform rotate() + Transform-origin()
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--20">
+                <div class="transform-element">
+                  Transform skew() + Transform-origin()
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 card-scene">
+                <div class="card">
+                  <div class="card__face card__face--front"><img src="images/img2.png" alt="">Font</div>
+                  <div class="card__face card__face--back"><img src="images/img3.png" alt="" >Back</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="cube-scene">
+                <div class="cube">
+                  <div class="cube__face cube__face--front">front</div>
+                  <div class="cube__face cube__face--back">back</div>
+                  <div class="cube__face cube__face--right">right</div>
+                  <div class="cube__face cube__face--left">left</div>
+                  <div class="cube__face cube__face--top">top</div>
+                  <div class="cube__face cube__face--bottom">bottom</div>
+                </div>
+              </div>
+              <form class="radio-group">
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="back" /> back
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="left" /> left
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="top" /> top
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                </label>
+              </form>
+            </div>
+            <div class="row">
+              <div class="box-scene">
+                <div class="box">
+                  <div class="box__face box__face--front">front</div>
+                  <div class="box__face box__face--back">back</div>
+                  <div class="box__face box__face--right">right</div>
+                  <div class="box__face box__face--left">left</div>
+                  <div class="box__face box__face--top">top</div>
+                  <div class="box__face box__face--bottom">bottom</div>
+                </div>
+              </div>
+              <form class="box-radio-group">
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="back" /> back
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="left" /> left
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="top" /> top
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                </label>
+              </form>
+            </div>
+            <div class="row">
+              <div class="carousel-scene">
+                <div class="carousel">
+                  <div class="carousel__cell">1</div>
+                  <div class="carousel__cell">2</div>
+                  <div class="carousel__cell">3</div>
+                  <div class="carousel__cell">4</div>
+                  <div class="carousel__cell">5</div>
+                  <div class="carousel__cell">6</div>
+                  <div class="carousel__cell">7</div>
+                  <div class="carousel__cell">8</div>
+                  <div class="carousel__cell">9</div>
+                </div>
+              </div>
+              <div style="text-align: center;">
+                <button class="previous-button">Previous</button>
+                <button class="next-button">Next</button>
               </div>
             </div>
           </div>
@@ -282,7 +482,7 @@
         <div class="square-small top sq3"></div>
       </div>
       <div class="square-big">
-        <div class="squarenv-small middle sq1"></div>
+        <div class="square-small middle sq1"></div>
       </div>
       <div class="square-big">
         <div class="square-small middle sq2"></div>
@@ -460,6 +660,6 @@
     </ul>
   </div>
   </div>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

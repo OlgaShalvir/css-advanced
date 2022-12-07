@@ -1,0 +1,65 @@
+@keyframes sasha {
+  0% {
+    left: 0;
+    background-color: green;
+  }
+  50% {
+    top: 10px;
+    opacity: 0.3;
+  }
+  100% {
+    left: calc(100% - 50px);
+    background-color: orange;
+  }
+}
+
+.animation-area {
+  background-color: #ccc;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 20%;
+  }
+
+  &:hover {
+    .animation-child {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.animation-child {
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // animation-name: sasha;
+// animation-duration: 2s;
+// animation-iteration-count: 1;
+// animation-timing-function: ease-in-out;
+// animation-direction: normal;
+// animation-fill-mode: both;
+// animation-delay: 4s;
+  animation: sasha 2s 1 ease-in-out normal both 4s;
+}
+
+/*
+animation-name: <denumirea keyframe-ului dorit>;
+animation-duration: <time> in secunde sau milisecunde;
+animation-iteration-count: <number> cifra, de cate ori sa ruleze animatia;
+animation-timing-function: linear || ease || ease-in || ease-in-out || ease-out || cubic-bezier();
+animation-play-state: running || paused; - indica starea de moment a animatiei;
+animation-direction: normal || reverse || alternate || alternate-reverse;
+animation-delay: <time> in seconde sau milisecunde - cu cât amânăm animația;
+animation-fill-mode: none(d) || forwards || backwards || both;
+  - none: stilurile din interiorul animației nu se aplică în afara animației, nici până nici după
+  - forwards: stilurile din ultimul cadru al animației se păstrează după sfârșit
+  - backwards: stilurile din primul cadru al animației se păstrează până la început
+  - both: stilurile din primul și stilurile din ultimul se păstrează ambele respectiv
+*/
+
+

@@ -1,39 +1,39 @@
-@mixin fix-inline-blocks($fontsize: 16px) {
-  font-size: 0;
+// @mixin fix-inline-blocks($fontsize: 16px) {
+//   font-size: 0;
 
-  > * {
-    display: inline-block;
-    font-size: $fontsize;
-  }
-}
+//   > * {
+//     display: inline-block;
+//     font-size: $fontsize;
+//   }
+// }
 
-.cineva {
-  @include fix-inline-blocks(16px);
-}
+// .cineva {
+//   @include fix-inline-blocks(16px);
+// }
 
-.section {
-  padding-top: 20px;
+// .section {
+//   padding-top: 20px;
 
-  @include breakpoint($desktop) {
-    padding-top: 40px; // va aplica de la 1200 in sus
-  }
-}
+//   @include breakpoint($desktop) {
+//     padding-top: 40px; // va aplica de la 1200 in sus
+//   }
+// }
 
-// exemplu desktop-first
-.section__title {
-  font-size: 20px;
+// // exemplu desktop-first
+// .section__title {
+//   font-size: 20px;
 
-  @include breakpoint(max-width $tablet) {
-    font-size: 14px;  // va aplica doar de la 768 in jos
-  }
-}
+//   @include breakpoint(max-width $tablet) {
+//     font-size: 14px;  // va aplica doar de la 768 in jos
+//   }
+// }
 
-// exemplu de range 
-.section__content {
-  margin-bottom: 20px;
+// // exemplu de range 
+// .section__content {
+//   margin-bottom: 20px;
 
-  @include breakpoint($tablet $desktop) {
-    margin-bottom: 40px; // va aplica doar intre 768 si pana la 1200
-  }
-}
+//   @include breakpoint($tablet $desktop) {
+//     margin-bottom: 40px; // va aplica doar intre 768 si pana la 1200
+//   }
+// }
 
