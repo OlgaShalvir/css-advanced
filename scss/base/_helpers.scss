@@ -37,3 +37,64 @@
 //   }
 // }
 
+@function coef-to-percentage($coef) {
+  @return $coef * 100%;
+}
+
+.test-function {
+  margin-top: coef-to-percentage(0.2);
+}
+
+@mixin get-theme-colors($theme: 'light') {
+  @if $theme == 'light' {
+    background-color: #fff;
+    color: #000;
+  }
+  @else if $theme == 'dark' {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.theme-light {
+  @include get-theme-colors();
+}
+
+.theme-dark {
+  @include get-theme-colors(dark);
+}
+
+$font-weights: (
+  'thin': 100,
+  'normal': 400,
+  'bold': 700,
+  'black': 900,
+);
+
+$primary-color: blue;
+$secondary-color: #ccc;
+$tertiary-color: #aaa;
+
+$brand-colors: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'tertiary': $tertiary-color,
+);
+
+
+@each $name, $weight in $font-weights {
+  .font-weight-#{$name} {
+    font-weight: $weight
+  }
+}
+
+@each $name, $color in $brand-colors {
+  .color-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
