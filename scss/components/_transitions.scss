@@ -1,36 +1,32 @@
 .transition-area {
-  background-color: #ccc;
+  background-image: url('../../images/road1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 
   &::after {
     content: '';
     display: block;
-    padding-top: 20%;
+    padding-top: 30%;
   }
 
   &:hover {
     .transition-child {
-      left: calc(100% - 50px);
-      top: 30px;
-      background-color: #00f;
-      opacity: 0.3;
-
+      left: calc(100% - 100px);
     }
   }
 }
 
+
+
 .transition-child {
-  width: 50px;
-  height: 50px;
-  background: #f00;
+  width: 7%;
+  // height: 40px;
+  border-bottom: whitesmoke;
   position: absolute;
   top: 0;
   left: 0;
-  transition:
-    background-color 2s ease-out 0s,
-    opacity 2s ease-out 0s,
-    left 2s linear 2s,
-    top 2s linear 4s;
+  transition: left 5s linear;
   // transition-property: left, top;
   // transition-duration: 5s;
   // transition-timing-function: ease-out;
@@ -42,3 +38,39 @@ transition-duration: <timp> in secunde sau milisecunde, cat timp sa dureze tranz
 transition-timing-function: linear || ease || ease-in || ease-in-out || ease-out || cubic-bezier()
 transition-delay: <timp> in secunde sau milisecunde, cat timp amânăm tranziția
 */
+
+.trasition-img {
+  width: 100%;
+  position: absolute;
+ 
+}
+
+.transition-child--1 {
+  top: 7%;
+  transition-timing-function: linear;
+}
+
+.transition-child--2 {
+  top: 21%;
+  transition-timing-function: ease-in-out;
+}
+
+.transition-child--3 {
+  top: 35%;
+  transition-timing-function: ease;
+}
+
+.transition-child--4 {
+  top: 49%;
+  transition-timing-function: ease-out;
+}
+
+.transition-child--5 {
+  top: 63%;
+  transition-timing-function: cubic-bezier(.02,.68,1,.62);
+}
+
+.transition-child--6 {
+  top: 77%;
+  transition-timing-function: cubic-bezier(.18,.6,.57,.97);
+}
