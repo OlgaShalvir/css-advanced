@@ -1,83 +1,50 @@
-@keyframes pacMan {
+@keyframes sasha {
   0% {
-    left: 0%;
-  }
-  20% {
-    left: calc(100% - 7%); 
-    top: 0px;
-  }
-    25% {
-   left: calc(100% - 7%); 
-   top: 14%;
-  }
-  45% {
-    top: 14%;
     left: 0;
+    background-color: green;
   }
   50% {
-    top: 28%;
-    left: 0;
-  }
-  70% {
-    top: 28%;
-    left: calc(100% - 7%);
-  }
-  75% {
-    top: 42%;
-    left: calc(100% - 7%);
-  }
-  95% {
-    top: 42%;
-    left: 0;
+    top: 10px;
+    opacity: 0.3;
   }
   100% {
-    top: 56%;
-    left: 0;
+    left: calc(100% - 50px);
+    background-color: orange;
   }
 }
 
 .animation-area {
   background-color: #ccc;
   position: relative;
-  background-image: url('../../images/Pacbg.jpg');
-  background-size: cover;
-  background-position: center;
 
   &::after {
     content: '';
     display: block;
-    padding-top: 30%;
-   }
+    padding-top: 20%;
+  }
 
-   &:hover {
+  &:hover {
     .animation-child {
       animation-play-state: paused;
     }
   }
-
-  
 }
 
 .animation-child {
-  width: 7%;
-  // height: 50px;
-  background: transparent;
+  width: 50px;
+  height: 50px;
+  background: #f00;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  animation-name: pacMan;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-fill-mode: backwards;
-}
-
-.animation-img {
-  width: 100%;
-  position: absolute;
-  
+  // animation-name: sasha;
+// animation-duration: 2s;
+// animation-iteration-count: 1;
+// animation-timing-function: ease-in-out;
+// animation-direction: normal;
+// animation-fill-mode: both;
+// animation-delay: 4s;
+  animation: sasha 2s 1 ease-in-out normal both 4s;
 }
 
 /*
@@ -94,3 +61,5 @@ animation-fill-mode: none(d) || forwards || backwards || both;
   - backwards: stilurile din primul cadru al animației se păstrează până la început
   - both: stilurile din primul și stilurile din ultimul se păstrează ambele respectiv
 */
+
+

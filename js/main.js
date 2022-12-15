@@ -3,7 +3,6 @@ var titles = document.querySelectorAll('.section__title')
 titles.forEach(element =>{
   element.onclick = function (event) {
     let button = event.target.closest('.section')
-    console.log(button)
     let hide = button.querySelector('.section__content')
     hide.classList.toggle('visible')
   }
@@ -74,7 +73,3 @@ nextButton.addEventListener( 'click', function() {
   selectedIndex++;
   rotateCarousel();
 });
-
-//advanced select
-jQuery('.advanced-select').select2();
-
