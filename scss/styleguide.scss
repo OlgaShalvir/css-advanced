@@ -16,20 +16,16 @@ $sidebar-width: 232px;
 
 .sidebar-area {
   width: $sidebar-width;
-  background-color: pink;
-  font-size: 16px;
-  line-height: 19px;
-  color: #A8B8D0;
-
-  a {
-    text-decoration: none;
-  }
+  background-color: #fff;
+  border: 1px solid #EEEEEE;
+  overflow: auto; 
 }
 
 .content-area {
   width: calc(100% - $sidebar-width);
   background-color: aliceblue;
   overflow-y: auto;
+  position: relative;
 }
 
 .section__title{
@@ -83,17 +79,43 @@ $sidebar-width: 232px;
   align-items: flex-end;
   margin-left: auto;
   padding-right: 60px;
+ 
   li + li {
     padding-left: 30px;
-
   }
+}
+
+.sidebar__content {
+  padding-top: 25px;
+ 
+  li { 
+    padding: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1.43px;
+    color: #3B3D40;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.main-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .section__content {
   display: none;
-}
+} 
 
-.visible {
+ .visible {
   display: block;
 }
+
 
