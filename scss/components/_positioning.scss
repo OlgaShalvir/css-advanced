@@ -1,10 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .square {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
-  @include breakpoint(max-width $tablet) {
-    width: 300px;
-  }
 }
 
 .square-big {
@@ -12,9 +15,6 @@
   height: 200px;
   width: 33.333%;
   position: relative;
-  @include breakpoint(max-width $tablet) {
-    height: 100px;
-  }
 }
 
 .square-small {
